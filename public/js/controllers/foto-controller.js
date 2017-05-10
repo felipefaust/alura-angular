@@ -34,7 +34,7 @@ angular.module('alurapic').controller('FotoController', function($scope, $http, 
                     $http.post('/v1/fotos', $scope.foto)
                     .success(function() {
                         $scope.foto = {};
-                        $scope.mensagem = 'Foto cadastrada com sucesso';
+                        $scope.mensagem = 'Foto cadastrada com sucesso TESTE GIT';
                     })
                     .error(function(erro) {
                         console.log(erro);
