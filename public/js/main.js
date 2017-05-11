@@ -1,4 +1,4 @@
-angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
+angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute', 'meusServicos'])
     .config(function($routeProvider, $locationProvider) {
 
         $locationProvider.html5Mode(true);
@@ -8,9 +8,7 @@ angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
             controller: 'FotosController'
         });
 
-       // foto no singular!
-
-        $routeProvider.when('/foto/new', {
+            $routeProvider.when('/foto/new', {
             templateUrl: 'partials/foto.html',
         	controller: 'FotoController'
         });
